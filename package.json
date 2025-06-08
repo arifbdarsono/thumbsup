@@ -1,0 +1,15 @@
+{
+  "name": "thumbsup-gallery",
+  "version": "1.0.0",
+  "description": "Photo gallery generated with Thumbsup",
+  "scripts": {
+    "build": "thumbsup --config config.json",
+    "dev": "thumbsup --config config.json && cd build_output && python3 -m http.server 8000"
+  },
+  "dependencies": {
+    "thumbsup": "^2.17.0"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

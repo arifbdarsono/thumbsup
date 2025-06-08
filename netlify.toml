@@ -1,0 +1,11 @@
+[build]
+  publish = "build_output"
+  command = "npm install -g thumbsup && apt-get update && apt-get install -y exiftool graphicsmagick && thumbsup --config config.json"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
